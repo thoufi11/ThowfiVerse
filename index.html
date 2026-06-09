@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThowfiVerse | Muhammad Thoufeek – Software Developer & Mathematics Tutor</title>
+  <meta name="description" content="Welcome to ThowfiVerse, the personal portfolio of Muhammad Thoufeek—MSc Computer Science student, BSc Mathematics graduate, Mathematics tutor, and aspiring software developer passionate about machine learning, problem-solving, and lifelong learning." />
+  <meta name="keywords" content="Muhammad Thoufeek, ThowfiVerse, Software Developer, Machine Learning, Mathematics Tutor, Computer Science, Portfolio" />
+  <meta property="og:title" content="ThowfiVerse | Muhammad Thoufeek" />
+  <meta property="og:description" content="Where Mathematics Meets Technology" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Particles -->
+<canvas id="particles"></canvas>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    ThowfiVerse
+    <span>Where Mathematics Meets Technology</span>
+  </a>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#beyond">Beyond</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" onclick="closeMobile()">🏠 Home</a>
+  <a href="#about" onclick="closeMobile()">👤 About</a>
+  <a href="#education" onclick="closeMobile()">🎓 Education</a>
+  <a href="#teaching" onclick="closeMobile()">📚 Teaching</a>
+  <a href="#skills" onclick="closeMobile()">⚡ Skills</a>
+  <a href="#projects" onclick="closeMobile()">🚀 Projects</a>
+  <a href="#case-studies" onclick="closeMobile()">📊 Case Studies</a>
+  <a href="#beyond" onclick="closeMobile()">🌟 Beyond the Code</a>
+  <a href="#contact" onclick="closeMobile()">✉️ Contact</a>
+</div>
+
+<!-- ======================== HOME ======================== -->
+<section id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span>Available for Internships & Full-Time Roles</span>
+        </div>
+        <h1 class="hero-name">
+          Muhammad<br>
+          <span class="grad-text">Thoufeek</span>
+        </h1>
+        <div class="hero-typing-wrap">
+          <span id="typing-text"></span>
+        </div>
+        <p class="hero-desc">
+          MSc Computer Science student with a strong foundation in Mathematics and experience as a Mathematics Tutor. Passionate about solving real-world problems through technology and continuously improving skills in software development and machine learning.
+        </p>
+        <div class="hero-btns">
+          <a href="#about" class="btn btn-primary"><i class="fas fa-compass"></i> Explore My Journey</a>
+          <a href="#resume" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+        <div class="hero-tags">
+          <span class="hero-tag">📐 Mathematics</span>
+          <span class="hero-tag">💻 Software Dev</span>
+          <span class="hero-tag">🤖 Machine Learning</span>
+          <span class="hero-tag">📊 Data Science</span>
+          <span class="hero-tag">🔐 Cybersecurity</span>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="profile-ring-outer">
+          <div class="profile-ring"></div>
+          <div class="profile-ring-inner"></div>
+          <div class="profile-img-circle">
+          <img src="Assets/Image/Profile.png" alt="Muhammad Thoufeek" />
+            <!-- <div class="profile-initials">MT</div> -->
+          </div>
+          <div class="hero-float-badge top-left">
+            <i class="fas fa-graduation-cap"></i> MSc CS Student
+          </div>
+          <div class="hero-float-badge top-right">
+            <i class="fas fa-brain"></i> ML Enthusiast
+          </div>
+          <div class="hero-float-badge bot-right">
+            <i class="fas fa-chalkboard-teacher"></i> Math Tutor
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about" class="py-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-user"></i> About Me</div>
+      <h2 class="section-title">The Journey of <span class="grad-text">Curiosity</span></h2>
+      <p class="section-sub">From solving equations to building solutions — a story of growth, teaching, and continuous learning.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-timeline fade-up">
+        <div class="tl-item">
+          <div class="tl-year">2021 — 2024</div>
+          <div class="tl-title">Foundation in Mathematics</div>
+          <div class="tl-desc">Completed BSc Mathematics from Mahatma Gandhi University, developing strong logical reasoning, pattern recognition, and analytical thinking skills.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2022 — Present</div>
+          <div class="tl-title">Teaching Mathematics</div>
+          <div class="tl-desc">Became a Mathematics Tutor for students from Classes 1–9, simplifying complex concepts and building student confidence and logical reasoning.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025 — Present</div>
+          <div class="tl-title">Transition into Computer Science</div>
+          <div class="tl-desc">Enrolled in MSc Computer Science at College of Applied Science Adoor, University of Kerala, bridging mathematical foundations with modern computing.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2026 — Present</div>
+          <div class="tl-title">Building Expertise</div>
+          <div class="tl-desc">Developed hands-on skills through academic projects in ML, cybersecurity, and web development. Completed a beginner-level ML internship.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025 — Beyond</div>
+          <div class="tl-title">Career in Technology</div>
+          <div class="tl-desc">Actively seeking internship and full-time roles in Software Development, Machine Learning, and Data Science to create meaningful impact.</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.9;margin-bottom:2rem;font-style:italic;border-left:3px solid var(--blue);padding-left:1.5rem;">
+          "From teaching young minds to building innovative solutions, I believe continuous learning creates meaningful impact."
+        </p>
+        <div class="traits-grid">
+          <div class="trait-card">
+            <div class="trait-icon">🧠</div>
+            <div class="trait-name">Analytical Thinking</div>
+            <div class="trait-desc">Mathematical background enables structured, logical problem-solving</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🗣️</div>
+            <div class="trait-name">Communication</div>
+            <div class="trait-desc">Honed through years of explaining complex concepts to students</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">👥</div>
+            <div class="trait-name">Leadership</div>
+            <div class="trait-desc">Teaching experience built natural mentoring and leadership skills</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">📈</div>
+            <div class="trait-name">Growth Mindset</div>
+            <div class="trait-desc">Constant learner who embraces new challenges and adapts quickly</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🎯</div>
+            <div class="trait-name">Problem Solving</div>
+            <div class="trait-desc">Driven by curiosity to find elegant solutions to complex problems</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🔄</div>
+            <div class="trait-name">Adaptability</div>
+            <div class="trait-desc">Successfully transitioned from Math to CS, thriving in both worlds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== EDUCATION ======================== -->
+<section id="education" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-graduation-cap"></i> Education</div>
+      <h2 class="section-title">Academic <span class="grad-text">Foundation</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="glass edu-card fade-up">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-status">Currently Pursuing</div>
+        <div class="edu-degree">MSc Computer Science</div>
+        <div class="edu-school">College of Applied Science Adoor, University of Kerala</div>
+        <div class="edu-year">2025 – 2027</div>
+        <div class="edu-tags">
+          <span class="edu-tag">Machine Learning</span>
+          <span class="edu-tag">Software Engineering</span>
+          <span class="edu-tag">Computer Networks</span>
+          <span class="edu-tag">Data Structures & Algorithms</span>
+          <span class="edu-tag">Cybersecurity</span>
+          <span class="edu-tag">Web Development</span>
+        </div>
+      </div>
+      <div class="glass edu-card fade-up">
+        <div class="edu-icon">📐</div>
+        <div style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.78rem;font-weight:600;color:#4ade80;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.2);border-radius:50px;padding:0.25rem 0.75rem;margin-bottom:0.75rem;">✅ Completed</div>
+        <div class="edu-degree">BSc Mathematics</div>
+        <div class="edu-school">Mahatma Gandhi University</div>
+        <div class="edu-year">2021 – 2024</div>
+        <div class="edu-tags">
+          <span class="edu-tag">Logical Reasoning</span>
+          <span class="edu-tag">Pattern Recognition</span>
+          <span class="edu-tag">Statistical Thinking</span>
+          <span class="edu-tag">Mathematical Problem Solving</span>
+          <span class="edu-tag">Abstract Algebra</span>
+          <span class="edu-tag">Calculus</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TEACHING ======================== -->
+<section id="teaching" class="py-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-chalkboard-teacher"></i> Teaching Experience</div>
+      <h2 class="section-title">Shaping <span class="grad-text">Young Minds</span></h2>
+    </div>
+    <div class="teaching-wrap">
+      <div class="glass teaching-card fade-up">
+        <div class="teaching-icon">📚</div>
+        <div class="teaching-title">Mathematics Tutor</div>
+        <div class="teaching-sub">Classes 1–9 | Private Tutoring</div>
+        <div class="resp-list">
+          <div class="resp-item">Simplifying complex mathematical concepts for young learners</div>
+          <div class="resp-item">Building confidence and encouraging logical reasoning in students</div>
+          <div class="resp-item">Supporting homework and exam preparation with personalized approaches</div>
+          <div class="resp-item">Creating engaging and interactive learning experiences</div>
+          <div class="resp-item">Developing customized study plans for individual students</div>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Communication</span>
+          <span class="chip">Leadership</span>
+          <span class="chip">Mentoring</span>
+          <span class="chip">Patience</span>
+          <span class="chip">Creativity</span>
+          <span class="chip">Time Management</span>
+        </div>
+      </div>
+      <div class="fade-up" style="display:flex;flex-direction:column;gap:1.5rem;">
+        <div class="glass" style="padding:2rem;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:800;margin-bottom:1rem;">Why Teaching Matters</h4>
+          <p style="color:var(--text2);line-height:1.8;font-size:0.9rem;">Teaching Mathematics has been more than a job — it's shaped how I think, communicate, and solve problems. Explaining difficult concepts in simple ways has made me a better developer: it forces clarity of thought, empathy for the learner's perspective, and the ability to break down complex systems into understandable parts.</p>
+        </div>
+        <div class="glass" style="padding:2rem;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:800;margin-bottom:1.25rem;">Impact & Achievements</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">1–10</div>
+              <div style="color:var(--text2);font-size:0.82rem;">Classes Covered</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">100%</div>
+              <div style="color:var(--text2);font-size:0.82rem;">Dedication</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass" style="padding:2rem;font-style:italic;color:var(--text2);font-size:0.95rem;line-height:1.8;border-left:3px solid var(--purple);">
+          "The best way to learn something deeply is to teach it. Every question from a student made me a sharper thinker."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SKILLS ======================== -->
+<section id="skills" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-bolt"></i> Skills</div>
+      <h2 class="section-title">Technical <span class="grad-text">Arsenal</span></h2>
+    </div>
+    <div class="skills-categories">
+      <div class="glass skill-cat-card fade-up">
+        <div class="skill-cat-icon">🐍</div>
+        <div class="skill-cat-title">Programming Languages</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Python</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>JavaScript</span><span>35%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Matlab</span><span>20%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="glass skill-cat-card fade-up">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Web Development</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-item-label"><span>HTML5</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>CSS3</span><span>60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>JavaScript (DOM)</span><span>45%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="glass skill-cat-card fade-up">
+        <div class="skill-cat-icon">🤖</div>
+        <div class="skill-cat-title">Machine Learning</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Scikit-learn</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70" style="background:var(--grad2)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Pandas & NumPy</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75" style="background:var(--grad2)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Matplotlib</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65" style="background:var(--grad2)"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="glass skill-cat-card fade-up">
+        <div class="skill-cat-icon">🛠️</div>
+        <div class="skill-cat-title">Tools & Platforms</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Git & GitHub</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75" style="background:linear-gradient(135deg,var(--cyan),var(--blue))"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>VS Code</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85" style="background:linear-gradient(135deg,var(--cyan),var(--blue))"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-label"><span>Jupyter Notebook</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70" style="background:linear-gradient(135deg,var(--cyan),var(--blue))"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section id="projects" class="py-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-rocket"></i> Projects</div>
+      <h2 class="section-title">What I've <span class="grad-text">Built</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="glass proj-card fade-up">
+        <div class="proj-icon">🛡️</div>
+        <div class="proj-title">ML-Based Intrusion Detection System</div>
+        <div class="proj-desc">Developed a machine learning-based IDS using the NSL-KDD dataset. Implemented Random Forest, SVM, KNN, and Decision Tree classifiers with SMOTE for class imbalance, achieving high accuracy in network intrusion detection.</div>
+        <div class="proj-techs">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">Scikit-learn</span>
+          <span class="proj-tech">Pandas</span>
+          <span class="proj-tech">SMOTE</span>
+          <span class="proj-tech">NSL-KDD</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#case-studies" class="btn btn-sm btn-primary"><i class="fas fa-file-alt"></i> Case Study</a>
+        </div>
+      </div>
+      <div class="glass proj-card fade-up">
+        <div class="proj-icon">🏃</div>
+        <div class="proj-title">Fitness Performance Prediction</div>
+        <div class="proj-desc">Built a regression model to predict athlete fitness performance using a fictional runners dataset. Applied linear regression with Python and Scikit-learn, with comprehensive data analysis and visualization in a sports analytics context.</div>
+        <div class="proj-techs">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">Machine Learning</span>
+          <span class="proj-tech">Linear Regression</span>
+          <span class="proj-tech">Matplotlib</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#case-studies" class="btn btn-sm btn-primary"><i class="fas fa-file-alt"></i> Case Study</a>
+        </div>
+      </div>
+      <div class="glass proj-card fade-up">
+        <div class="proj-icon">🌐</div>
+        <div class="proj-title">Personal Portfolio Website</div>
+        <div class="proj-desc">Designed and developed this personal portfolio — ThowfiVerse — with dark theme glassmorphism, smooth animations, and full responsiveness. Deployment-ready for Vercel with React + Vite setup guidance.</div>
+        <div class="proj-techs">
+          <span class="proj-tech">HTML</span>
+          <span class="proj-tech">CSS</span>
+          <span class="proj-tech">JavaScript</span>
+          <span class="proj-tech">Glassmorphism</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#home" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Live Demo</a>
+        </div>
+      </div>
+      <div class="glass proj-card proj-coming fade-up" style="grid-column:span 1;">
+        <div class="proj-coming-icon">🚀</div>
+        <div class="proj-title" style="font-size:1.05rem;">Coming Soon</div>
+        <div class="proj-desc">Currently exploring new ideas and building innovative projects in Software Development and Machine Learning. Stay tuned for exciting new additions to my portfolio.</div>
+        <div class="proj-techs">
+          <span class="proj-tech">🤔 In Planning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROBLEM SOLVER'S CORNER ======================== -->
+<section id="problem-solver" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-brain"></i> Problem Solver's Corner</div>
+      <h2 class="section-title">My Problem-Solving <span class="grad-text">Process</span></h2>
+      <p class="section-sub">Where analytical thinking meets practical innovation.</p>
+    </div>
+    <div class="ps-steps fade-up">
+      <div class="glass ps-step">
+        <div class="ps-num">1</div>
+        <div class="ps-step-title">Understand the Problem</div>
+        <div class="ps-step-desc">Deeply analyze the problem statement, clarify ambiguities, and define the scope and constraints clearly.</div>
+      </div>
+      <div class="glass ps-step">
+        <div class="ps-num">2</div>
+        <div class="ps-step-title">Analyze Requirements</div>
+        <div class="ps-step-desc">Break down functional and non-functional requirements. Identify stakeholders and success criteria.</div>
+      </div>
+      <div class="glass ps-step">
+        <div class="ps-num">3</div>
+        <div class="ps-step-title">Explore Solutions</div>
+        <div class="ps-step-desc">Brainstorm multiple approaches. Evaluate trade-offs between simplicity, performance, and scalability.</div>
+      </div>
+      <div class="glass ps-step">
+        <div class="ps-num">4</div>
+        <div class="ps-step-title">Develop & Test</div>
+        <div class="ps-step-desc">Implement iteratively with frequent testing. Write clean, readable, and maintainable code.</div>
+      </div>
+      <div class="glass ps-step">
+        <div class="ps-num">5</div>
+        <div class="ps-step-title">Optimize & Improve</div>
+        <div class="ps-step-desc">Review performance, gather feedback, and continuously refine. Document and share learnings.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================== CASE STUDIES ======================== -->
+<section id="case-studies" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-file-alt"></i> Case Studies</div>
+      <h2 class="section-title">In-Depth <span class="grad-text">Analysis</span></h2>
+    </div>
+    <div class="cs-grid">
+      <div class="glass cs-card fade-up">
+        <div class="cs-num">CASE STUDY 01</div>
+        <div class="cs-title">Intrusion Detection System Using Machine Learning</div>
+        <div class="cs-abstract">Comprehensive study on applying ML classifiers (Random Forest, SVM, KNN, Decision Tree) to the NSL-KDD dataset for network intrusion detection. Includes SMOTE for class imbalance, cross-validation, and real-world alert simulation.</div>
+        <div class="cs-tags">
+          <span class="cs-tag">Machine Learning</span>
+          <span class="cs-tag">Cybersecurity</span>
+          <span class="cs-tag">NSL-KDD</span>
+          <span class="cs-tag">Python</span>
+        </div>
+        <div style="display:flex;gap:0.75rem;">
+          <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> Preview</a>
+        </div>
+      </div>
+      <div class="glass cs-card fade-up">
+        <div class="cs-num">CASE STUDY 02</div>
+        <div class="cs-title">Fitness Performance Prediction</div>
+        <div class="cs-abstract">Applied linear regression to predict athletic performance outcomes in a sports analytics context. Covers full ML pipeline: data preprocessing, feature engineering, model training, evaluation metrics, and visualization of insights.</div>
+        <div class="cs-tags">
+          <span class="cs-tag">Linear Regression</span>
+          <span class="cs-tag">Sports Analytics</span>
+          <span class="cs-tag">Scikit-learn</span>
+          <span class="cs-tag">Data Science</span>
+        </div>
+        <div style="display:flex;gap:0.75rem;">
+          <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> Preview</a>
+        </div>
+      </div>
+      <div class="glass cs-card fade-up">
+        <div class="cs-num">CASE STUDY 03</div>
+        <div class="cs-title">Software Development Learning Journey</div>
+        <div class="cs-abstract">A personal narrative documenting the transition from Mathematics to Computer Science. Chronicles key learning milestones, projects built, technologies explored, and insights gained from bridging two disciplines.</div>
+        <div class="cs-tags">
+          <span class="cs-tag">Software Development</span>
+          <span class="cs-tag">Web Dev</span>
+          <span class="cs-tag">Career</span>
+          <span class="cs-tag">Learning</span>
+        </div>
+        <div style="display:flex;gap:0.75rem;">
+          <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a>
+          <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> Preview</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CERTIFICATIONS ======================== -->
+<section id="certifications" class="py-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-certificate"></i> Certifications</div>
+      <h2 class="section-title">Credentials & <span class="grad-text">Achievements</span></h2>
+    </div>
+    <div class="cert-grid fade-up">
+      <div class="glass cert-card">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-name">Add Your Certificate Name</div>
+        <div class="cert-org">Issuing Organization</div>
+        <div class="cert-date">Month Year</div>
+        <a href="#" class="btn btn-sm btn-outline" style="margin-top:0.5rem;"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+      <div class="glass cert-card">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-name">Add Your Certificate Name</div>
+        <div class="cert-org">Issuing Organization</div>
+        <div class="cert-date">Month Year</div>
+        <a href="#" class="btn btn-sm btn-outline" style="margin-top:0.5rem;"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+      <div class="glass cert-card">
+        <div class="cert-icon">📜</div>
+        <div class="cert-name">ML Internship Certificate</div>
+        <div class="cert-org">Your Internship Organization</div>
+        <div class="cert-date">2024</div>
+        <a href="#" class="btn btn-sm btn-outline" style="margin-top:0.5rem;"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--text3);font-size:0.85rem;margin-top:1.5rem;font-style:italic;">* Add your actual certifications with names, organizations, and dates.</p>
+  </div>
+</section>
+
+<!-- ======================== RESUME ======================== -->
+<section id="resume" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-file-user"></i> Resume</div>
+      <h2 class="section-title">My <span class="grad-text">Resume</span></h2>
+    </div>
+    <div class="resume-wrap fade-up">
+      <div class="resume-preview">
+        <div class="resume-preview-inner">
+          <div class="resume-name">Muhammad Thoufeek</div>
+          <div class="resume-title-line">MSc Computer Science Student | Software Developer | Mathematics Tutor</div>
+          <div style="display:flex;gap:1rem;font-size:0.8rem;color:var(--text3);margin-bottom:1.5rem;flex-wrap:wrap;">
+            <span>📍 Adoor, Kerala</span>
+            <span>📧 your.email@gmail.com</span>
+            <span>🔗 github.com/yourusername</span>
+          </div>
+          <div class="resume-section-title">Education</div>
+          <div class="resume-row"><span>MSc Computer Science — University of Kerala</span><span>2024–2026</span></div>
+          <div class="resume-row"><span>BSc Mathematics — Mahatma Gandhi University</span><span>2021–2024</span></div>
+          <div class="resume-section-title">Experience</div>
+          <div class="resume-row"><span>Mathematics Tutor — Classes 1–9 (Private)</span><span>2022–Present</span></div>
+          <div class="resume-row"><span>Machine Learning Intern (Beginner Level)</span><span>2024</span></div>
+          <div class="resume-section-title">Technical Skills</div>
+          <div style="font-size:0.85rem;color:var(--text2);">Python, JavaScript, Java, HTML/CSS, Scikit-learn, Pandas, NumPy, Matplotlib, Git, GitHub, VS Code</div>
+          <div class="resume-section-title">Projects</div>
+          <div class="resume-row"><span>ML-Based Intrusion Detection System</span><span>2024</span></div>
+          <div class="resume-row"><span>Fitness Performance Prediction</span><span>2024</span></div>
+          <div class="resume-row"><span>Personal Portfolio — ThowfiVerse</span><span>2025</span></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:1rem;justify-content:center;">
+        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF Resume</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== BEYOND THE CODE ======================== -->
+<section id="beyond" class="py-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-star"></i> Beyond the Code</div>
+      <h2 class="section-title">Passions That <span class="grad-text">Shape Me</span></h2>
+      <p class="section-sub">Exploring passions that shape my personality beyond programming.</p>
+    </div>
+    <div class="beyond-grid">
+      <div class="glass beyond-card fade-up">
+        <div class="beyond-icon">⚽</div>
+        <div class="beyond-title">Football Enthusiast</div>
+        <div class="beyond-sub">Player & Passionate Supporter</div>
+        <div class="beyond-desc">Playing and watching football has taught me the value of teamwork, quick decision-making, and resilience. Every match is a lesson in strategy and collaboration.</div>
+        <div class="beyond-skills">
+          <span class="beyond-skill">Teamwork</span>
+          <span class="beyond-skill">Leadership</span>
+          <span class="beyond-skill">Decision Making</span>
+          <span class="beyond-skill">Adaptability</span>
+        </div>
+      </div>
+      <div class="glass beyond-card fade-up">
+        <div class="beyond-icon">🏏</div>
+        <div class="beyond-title">Cricket Enthusiast</div>
+        <div class="beyond-sub">Player & Sports Analyst at Heart</div>
+        <div class="beyond-desc">Cricket demands patience, focus, and strategic thinking — qualities that directly translate to writing better code and solving complex technical challenges with precision.</div>
+        <div class="beyond-skills">
+          <span class="beyond-skill">Focus</span>
+          <span class="beyond-skill">Collaboration</span>
+          <span class="beyond-skill">Strategic Thinking</span>
+          <span class="beyond-skill">Persistence</span>
+        </div>
+      </div>
+      <div class="glass beyond-card fade-up">
+        <div class="beyond-icon">📱</div>
+        <div class="beyond-title">Social Media Explorer</div>
+        <div class="beyond-sub">@your_thowfi.__ on Instagram</div>
+        <div class="beyond-desc">Sharing my academic journey, tutoring experiences, and technology interests online. Social media keeps me connected with learners and creators who inspire my growth.</div>
+        <div class="beyond-skills">
+          <span class="beyond-skill">Communication</span>
+          <span class="beyond-skill">Networking</span>
+          <span class="beyond-skill">Digital Awareness</span>
+          <span class="beyond-skill">Community</span>
+        </div>
+      </div>
+    </div>
+    <div class="beyond-quote fade-up">
+      <strong>"I believe growth happens both inside and outside the classroom.</strong> Sports teach teamwork and resilience, while social platforms create opportunities to learn, connect, and inspire. Every experience — on the field, in the classroom, or online — shapes who I am as a developer, teacher, and human being."
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section id="contact" class="py-section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-badge"><i class="fas fa-envelope"></i> Contact</div>
+      <h2 class="section-title">Let's Build the <span class="grad-text">Future Together</span></h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="fade-up">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Whether you have an internship opportunity, project collaboration, or just want to connect — I'd love to hear from you!</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto: muhammadthoufeek11@gmail.com" class="contact-link">
+            <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-link-text">Email</div>
+              <div class="contact-link-sub">muhammadthoufeek11@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/thoufi11" target="_blank" class="contact-link">
+            <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <div class="contact-link-text">GitHub</div>
+              <div class="contact-link-sub">github.com/thoufi11</div>
+            </div>
+          </a>
+          <a href="www.linkedin.com/in/muhammad-thoufeek-thowfi11" target="_blank" class="contact-link">
+            <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <div class="contact-link-text">LinkedIn</div>
+              <div class="contact-link-sub">muhammad-thoufeek-thowfi11</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/thowfi.__/" target="_blank" class="contact-link">
+            <div class="contact-link-icon"><i class="fab fa-instagram"></i></div>
+            <div>
+              <div class="contact-link-text">Instagram</div>
+              <div class="contact-link-sub">thowfi.__</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="glass" style="padding:2.5rem;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:1.75rem;">Send a Message</h4>
+          <form class="contact-form" id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="john@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" class="form-control" placeholder="Internship Opportunity / Collaboration / ..." required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">ThowfiVerse</div>
+        <div class="footer-tagline">Where Mathematics Meets Technology</div>
+        <div class="footer-quote">"From equations to algorithms, from classrooms to code — I strive to learn, inspire, and create meaningful solutions."</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-socials">
+          <a href="https://github.com/thoufi11" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/muhammad-thoufeek-thowfi11" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/thowfi.__" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="mailto: muhammadthoufeek11@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.5rem;">Currently seeking:</div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span style="padding:0.25rem 0.7rem;border-radius:50px;font-size:0.75rem;background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--blue);font-weight:600;">Internships</span>
+            <span style="padding:0.25rem 0.7rem;border-radius:50px;font-size:0.75rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);color:var(--purple);font-weight:600;">Full-Time Roles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Muhammad Thoufeek. All Rights Reserved.</span>
+      <span>Made with <span class="footer-heart">♥</span> in Kerala, India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ======================== JAVASCRIPT ======================== -->
+<script src="script.js"></script>
+</body>
+</html>
